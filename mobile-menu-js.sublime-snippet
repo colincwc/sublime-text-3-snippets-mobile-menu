@@ -1,0 +1,62 @@
+<snippet>
+	<description>Mobile Menu (JS)</description>
+	<tabTrigger>mobile-menu.js</tabTrigger>
+	<content><![CDATA[
+\$(function() {
+
+	\$('nav.mobile-menu .menu-container').on('click', function() {
+
+		if( \$(this).children('.menu').css('opacity') < 1 ) {
+			
+			/*
+				Show the mobile menu
+				--------------------
+
+				1. Show Links - hidden to prevent scrolling issue
+				2. Animate width and relative top
+				3. Animate menu items
+				4. Animate menu height
+				5. Give the menu focus
+
+			*/
+
+			\$(this).children('.menu').find('a').show();
+			\$(this).children('.menu').animate({ 'width': '200px', 'top': '15px' }, { duration: 150, queue: false });
+			\$(this).children('.menu').animate({ 'opacity': 1 }, { duration: 250, queue: false });
+			\$(this).children('.menu').children('li').each(function() {
+				\$(this).animate({ 'margin-top': '0', 'opacity': 1 }, { duration: 250 });
+			});
+			\$(this).children('.menu').animate({ 'height': 40 + \$(this).find('li').length * 31 + 'px' }, 300);
+			\$(this).children('.menu').focus();
+
+		} else {
+			
+			/*
+				Hide all mobile menus
+				---------------------
+
+				1. Hide links
+				2. Reset height, opacity, relative top and width
+				3. Reset menu items
+
+			*/
+
+			\$('nav.mobile-menu .menu').find('a').hide();
+			\$('nav.mobile-menu .menu').css({ 'height': '0', 'opacity': 0, 'top': '30px', 'width': '0' });
+			\$('nav.mobile-menu .menu').children('li').css('margin-top', '-5px');
+
+		}
+
+	});
+	
+	\$(document).on('click', function(event) {
+		if(!\$(event.target).is('nav.mobile-menu .menu') && !\$(event.target).is('nav.mobile-menu .menu-toggle') && !\$(event.target).is('nav.mobile-menu .menu-container')) {
+			\$('nav.mobile-menu .menu').find('a').hide();
+			\$('nav.mobile-menu .menu').animate({ 'height': '0', 'opacity': 0, 'top': '30px', 'width': '0' }, { duration: 10, queue: false });
+			\$('nav.mobile-menu .menu').children('li').animate({ 'margin-top': '-5px' }, { duration: 250, queue: false });
+		}
+	});
+
+});
+]]></content>
+</snippet>

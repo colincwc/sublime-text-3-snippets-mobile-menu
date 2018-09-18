@@ -1,0 +1,23 @@
+<snippet>
+	<description>Mobile Menu (HTML)</description>
+	<tabTrigger>mobile-menu.html</tabTrigger>
+	<content><![CDATA[
+<nav class='mobile-menu'>
+	<div class='menu-container right'>
+		<div class='menu-toggle'>...</div>
+		<div class='menu'>
+			<li><a href='#'>New tab</a></li>
+			<li><a href='#'>New incognito tab</a></li>
+			<li><a href='#'>Bookmarks</a></li>
+			<li><a href='#'>Recent tabs</a></li>
+			<li><a href='#'>History</a></li>
+			<li><a href='#'>Downloads</a></li>
+			<li><a href='#'>Share...</a></li>
+			<li><a href='#'>Find in page</a></li>
+			<li><a href='#'>Add to Home screen</a></li>
+		</div>
+	</div>
+	<div class='clear'></div>
+</nav>
+]]></content>
+</snippet>
