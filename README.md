@@ -11,6 +11,10 @@ Sublime Text 3 Snippets for an android-like menu for mobile.
 
 ![https://media.giphy.com/media/5t26kKpVgQzi2YjNno/giphy.gif](https://media.giphy.com/media/5t26kKpVgQzi2YjNno/giphy.gif)
 
+## Demo
+
+[Demo](https://jsfiddle.net/xb7q8ua0/1/embedded/result/)
+
 
 ## Installation
 
