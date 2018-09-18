@@ -19,25 +19,25 @@ Sublime Text 3 Snippets for an android-like menu for mobile.
 *Windows*
 
       cd "%AppData%\Sublime Text 3\Packages\"
-      git clone https://github.com/colincwc/sublime-text-3-snippet-mobile-menu
+      git clone https://github.com/colincwc/sublime-text-3-snippets-mobile-menu
 
 
 *MacOS*
 
       cd "~/Library/Application Support/Sublime Text 3/Packages/User"
-      git clone https://github.com/colincwc/sublime-text-3-snippet-mobile-menu
+      git clone https://github.com/colincwc/sublime-text-3-snippets-mobile-menu
 
 
 *Linux*
 
       cd ~/.config/sublime-text-3/Packages/User
-      git clone https://github.com/colincwc/sublime-text-3-snippet-mobile-menu
+      git clone https://github.com/colincwc/sublime-text-3-snippets-mobile-menu
 
 
 ### Manual
 
 1. Download the repo
-2. Extract the mobile-menu folder to:
+2. Extract the ```sublime-text-3-snippets-mobile-menu-master``` folder to:
 
 *Windows* ```C:\Users\<username>\AppData\Sublime Text 3\Packages```
 
