@@ -3,13 +3,11 @@ Sublime Text 3 Snippets for an android-like menu for mobile.
 
 
 ## Pre-requisites
---------------
 
 * jQuery
 
 
 ## Preview
--------
 
 ![https://media.giphy.com/media/5t26kKpVgQzi2YjNno/giphy.gif](https://media.giphy.com/media/5t26kKpVgQzi2YjNno/giphy.gif)
 
@@ -48,7 +46,7 @@ Sublime Text 3 Snippets for an android-like menu for mobile.
 *Linux* ```~/.config/sublime-text-3/Packages/Users```
 
 
-### Usage
+## Usage
 
 1. HTML: Type `mobile-menu.html` and press **TAB**
 2. JS:   Type `mobile-menu.js` and press **TAB**
